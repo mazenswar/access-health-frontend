@@ -28,7 +28,7 @@ export default class DoctorContainer extends Component {
     render(){
         return(
             <section className="doctor-container">
-                
+
                 {this.getDoctorCards()}
             </section>
         )

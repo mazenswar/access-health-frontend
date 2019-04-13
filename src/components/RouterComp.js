@@ -7,6 +7,7 @@ import ProfileContainer from '../containers/ProfileContainer'
 import Show from './Show'
 
 const RouterComp = (props) => {
+
   return(
     <Switch>
       <Route path='/home' component={Home} />

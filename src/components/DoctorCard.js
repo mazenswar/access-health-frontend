@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 const DoctorCard = props => {
 
     return(
-        <Link to={`/${props.doctor.id}`}>
+        <Link to={`/${props.doctor.id}`} >
         <div className="doctor-card">
             <p>Name: {props.doctor.name}</p>
             <p>Specialty: {props.doctor.speciality}</p>

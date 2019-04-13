@@ -77,8 +77,14 @@ class App extends Component {
     this.props.history.push('/')
   }
 
+  handleDocMessage = (event) => {
+      event.preventsDefault()
+      console.log("clicked yo");
+  }
+
 
   render() {
+
     return (
       <div className="App">
         <Navbar handleLogout={this.handleLogout} user={this.state.currentUser}/>
