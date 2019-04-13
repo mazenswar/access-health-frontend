@@ -10,11 +10,11 @@ Mental health is fundamental to our collective and individual ability as humans 
 
 The [National Institute of Mental Health](https://www.nimh.nih.gov/health/statistics/mental-illness.shtml#part_154787) states that nearly one in five U.S. adults live with a mental illness (46.6 million in 2017).
 
-![Graph](src/images/mental-health-svcs-adults.png)
-
 What are Mental Health Services?
 
 In the [2017 National Survey on Drug Use and Health (NSDUH)](https://www.samhsa.gov/data/sites/default/files/cbhsq-reports/NSDUHDetailedTabs2017/NSDUHDetailedTabs2017.htm#tab8-33A) mental health services is defined as having received inpatient treatment/counseling or outpatient treatment/counseling, or having used prescription medication for problems with emotions, nerves, or mental health.
+
+![Graph](src/images/mental-health-svcs-adults.png)
 
 For the purposes of our app, we will be focusing on the services of Psychologists, Therapists, and Psychiatrists. 
 
