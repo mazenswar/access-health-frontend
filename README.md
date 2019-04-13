@@ -4,9 +4,9 @@
 According to the [World Health Organization](https://www.who.int/en/news-room/fact-sheets/detail/mental-health-strengthening-our-response
 ):
 
-  *"Mental health is a state of well-being in which an individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and is able to make a contribution to his or her community.
+  *"Mental health is a state of well-being in which an individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and is able to make a contribution to his or her community.*
 
-  Mental health is fundamental to our collective and individual ability as humans to think, emote, interact with each other, earn a living and enjoy life. On this basis, the promotion, protection and restoration of mental health can be regarded as a vital concern of individuals, communities and societies throughout the world."*
+  *Mental health is fundamental to our collective and individual ability as humans to think, emote, interact with each other, earn a living and enjoy life. On this basis, the promotion, protection and restoration of mental health can be regarded as a vital concern of individuals, communities and societies throughout the world."*
 
 The [National Institute of Mental Health](https://www.nimh.nih.gov/health/statistics/mental-illness.shtml#part_154787) states that nearly one in five U.S. adults live with a mental illness (46.6 million in 2017).
 
@@ -16,11 +16,12 @@ In the [2017 National Survey on Drug Use and Health (NSDUH)](https://www.samhsa.
 
 ![Graph](src/images/mental-health-svcs-adults.png)
 
-Forrr the purposes of our app, we will be focusing on the services of Psychologists, Therapists, and Psychiatrists.
+For the purposes of our app, we will be focusing on the services of Psychologists, Therapists, and Psychiatrists.
 
 ## Design Statement:
 Our app provides access to mental health services for young professionals (age 18-40) in NYC to whom access to mental health care was previously unavailable.
-Our app will also provide medical students the opportunity to fulfill hour requirements of a fellowship program.
+
+Our app will also provide students in the field of mental health treatment the opportunity to fulfill hour requirements of a fellowship program.
 
 ## MVP:
 - An app that facilitates the connection between a User (patient) and a Doctor who specializes in mental health services.
