@@ -83,12 +83,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar handleLogout={this.handleLogout} user={this.state.currentUser}/>
-<<<<<<< HEAD
-        <RouterComp handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
-=======
         <RouterComp user={this.state.currentUser} handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
->>>>>>> 485ec02ce92340259236febfd5c4c78ad1191042
-        <Footer />
+        <Footer user={this.state.currentUser}/>
       </div>
     );
   }
