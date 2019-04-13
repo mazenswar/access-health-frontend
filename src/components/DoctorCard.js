@@ -5,11 +5,11 @@ const DoctorCard = props => {
     return(
         <Link to={`/${props.doctor.id}`} >
         <div className="doctor-card">
-            <p>Name: {props.doctor.name}</p>
+            <img src={props.doctor.img_url}/>
+            <h3>Name: {props.doctor.name}</h3>
             <p>Specialty: {props.doctor.speciality}</p>
             <p>Years Experience: {props.doctor.years_experience}</p>
             <p>Education: {props.doctor.education}</p>
-            <img src={props.doctor.img_url}/>
         </div>
         </Link>
     )
