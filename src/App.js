@@ -16,12 +16,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-
     let token = localStorage.getItem('token')
     if(token) {
       fetch('http://localhost:4000/current_user', { headers: { Authorization: `Bearer ${token}` } })
       .then( r => r.json() )
-      .then( data => this.setState({ currentUser: data }))
+      .then( data => this.setState({ currentUser: data }, () => console.log(data)))
       this.props.history.push('/home')
     } else {
       this.props.history.push('/')
@@ -89,7 +88,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar handleLogout={this.handleLogout} user={this.state.currentUser}/>
-        <RouterComp handleDocMessage={this.handleDocMessage} handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
+        <RouterComp user={this.state.currentUser} handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
         <Footer />
       </div>
     );
