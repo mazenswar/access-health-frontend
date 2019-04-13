@@ -16,9 +16,8 @@ In the [2017 National Survey on Drug Use and Health (NSDUH)](https://www.samhsa.
 
 ![Graph](src/images/mental-health-svcs-adults.png)
 
-For the purposes of our app, we will be focusing on the services of Psychologists, Therapists, and Psychiatrists. 
-
-
+For the purposes of our app, we will be focusing on the services of Psychologists, Therapists, and Psychiatrists.
+- 
 ## Design Statement:
 Our app provides access to mental health services for young professionals (age 18-40) in NYC to whom access to mental health care was previously unavailable.
 Our app will also provide medical students the opportunity to fulfill hour requirements of a fellowship program.
