@@ -5,10 +5,10 @@ const Navbar = (props) => {
   return (
     <nav>
       <Link to="">Home</Link>
-      <Link to="/doctors">Doctors</Link>
+      { props.user.username ? <Link to="/doctors">Doctors</Link> : null }
       <Link to="">Profile</Link>
 
-      { props.user ? <Link>Logout</Link> : null }
+      { props.user.username	 ? <Link onClick={props.handleLogout}>Logout</Link> : null }
     </nav>
   )
 }

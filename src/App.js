@@ -12,7 +12,7 @@ import './App.css';
 class App extends Component {
 
   state = {
-    currentUser: '',
+    currentUser: {},
   }
 
   componentDidMount() {
@@ -43,7 +43,7 @@ class App extends Component {
       localStorage.setItem('token', data.jwt)
       console.log(data)
       this.setState({
-        currentUser: data.user
+        currentUser: data
       })
     } )
 
@@ -61,23 +61,29 @@ class App extends Component {
       body: JSON.stringify(userData)
     }
     fetch('http://localhost:4000/auth', configObj)
-    .then( r => r.json() )
+    .then( r => r.json())
     .then( data => {
       if(data.jwt) {
-        this.setState({ currentUser: data.user})
+        this.setState({ currentUser: data }, () => console.log(data))
         localStorage.setItem('token', data.jwt)
         this.props.history.push('./home')
       }
     })
 
+  }
 
+  handleLogout = () => {
+    this.setState({ currentUser: {} })
+    localStorage.removeItem("token")
+    this.props.history.push('/')
   }
 
 
   render() {
+    console.log(this.state.currentUser)
     return (
       <div className="App">
-        <Navbar user={this.state.currentUser}/>
+        <Navbar handleLogout={this.handleLogout} user={this.state.currentUser}/>
         <RouterComp handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
         <Footer />
       </div>
