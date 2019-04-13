@@ -29,21 +29,21 @@ Our app will also provide students in the field of mental health treatment the o
 
 ## App Site Map:
 - Landing Page
-	- About (app/project)
-	- FAQ (with descriptions of )
+	- About
+	- FAQ
 - Navbar
 	- Home
 	- Doctor List
 	- Profile
 - Doctor List Page
-	- LIST of doctors
-	- SEARCH by name
-	- FILTER by specialization/location
-	- CLICK on doctor ITEM
+	- List of doctors
+	- Search for Doctor by name
+	- Filter by specialization/location
+	- Click on doctor ITEM
 - Doctor Show Page
-	- DETAILS of doctor
-	- MESSAGE doctor through textarea
-	- CALENDAR (stretch)
+	- Details of doctor
+	- Message doctor
+	- Calendar (stretch)
 - Profile
 	- User details
 	- Text area to input mental health issue that needs help
@@ -54,5 +54,16 @@ Our app will also provide students in the field of mental health treatment the o
 - Ruby on Rails
 
 ## Implement App
+#### FRONTEND
 $ npm install
+
 $ npm start
+
+#### BACKEND
+$ bundle install
+
+$ rails db:migrate
+
+$ rails db:seed
+
+$ rails s
