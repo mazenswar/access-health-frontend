@@ -48,8 +48,14 @@ ul li {
 nav {
   background-color: #fff;
   height: 50px;
-  display: flex;
   border-bottom: 1px solid #ccc;
+
+}
+
+.nav-container {
+  /* width: 960px;
+  margin: auto; */
+  display: flex;
 }
 
 nav a:link, nav a:active, nav a:visited {
@@ -81,6 +87,11 @@ nav a:hover {
 .photo {
   width: 30px;
   margin-top: 10px;
+}
+
+.logo-image {
+  padding: 8px 0 0 30px;
+  width: 150px;
 }
 
 body {
@@ -129,6 +140,7 @@ section:last-child {
   width: 700px;
   margin: auto;
   padding: 0 0 30px 0;
+  text-align: left;
 }
 
 /* SECTION */
