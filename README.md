@@ -34,6 +34,6 @@ An app to provide access to mental health services for young professionals (age 
 	- Text area to input mental health issue that needs help
 
 ## Technologies Used:
-- Blockstack
+- ~~Blockstack~~
 - React
 - Ruby on Rails
