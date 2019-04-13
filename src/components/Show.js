@@ -8,12 +8,13 @@ export default class Show extends Component {
 
     componentDidMount(){
         let urlParam = this.props.match.params.id
+        console.log(urlParam);
         fetch(`http://localhost:4000/doctors/${urlParam}`)
         .then(res => res.json())
         .then(doctor => {
             this.setState({
                 doctor: doctor
-            },()=> console.log(this.state))
+            })
         })
 }
 
@@ -23,10 +24,11 @@ export default class Show extends Component {
 
 
     render(){
-        console.log(this.state.doctor);
+        console.log(this.state.props);
             return(
                 <div>
                     <h1>{this.state.doctor.name}</h1>
+                    <button type="submit">Send {this.state.doctor.name} A Message</button>
                     <img src={this.state.doctor.img_url}/>
                     <p>Specialty: {this.state.doctor.speciality}</p>
                     <p>Location: {this.state.doctor.location}</p>

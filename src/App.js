@@ -78,13 +78,18 @@ class App extends Component {
     this.props.history.push('/')
   }
 
+  handleDocMessage = (event) => {
+      event.preventsDefault()
+      console.log("clicked yo");
+  }
+
 
   render() {
-    console.log(this.state.currentUser)
+
     return (
       <div className="App">
         <Navbar handleLogout={this.handleLogout} user={this.state.currentUser}/>
-        <RouterComp handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
+        <RouterComp handleDocMessage={this.handleDocMessage} handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
         <Footer />
       </div>
     );
