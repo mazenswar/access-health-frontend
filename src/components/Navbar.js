@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
+  console.log(props.user['user'])
   return (
     <nav>
-      <Link to="">Home</Link>
-      { props.user.username ? <Link to="/doctors">Doctors</Link> : null }
-      <Link to="">Profile</Link>
+      <div className="navLink"><Link to="">Home</Link></div>
+      { props.user.username || props.user['user'] ? <div className="navLink"><Link to="/doctors">Doctors</Link></div> : null }
+      { props.user.username || props.user['user'] ? <div className="profilePhoto"><Link to="/profile"><img src="https://ya-webdesign.com/images/blank-profile-picture-png-8.png" className="photo"/></Link></div> : null }
 
-      { props.user.username	 ? <Link onClick={props.handleLogout}>Logout</Link> : null }
+      { props.user.username || props.user['user'] ? <div className="navLink"><Link onClick={props.handleLogout}>Logout</Link></div> : null }
     </nav>
   )
 }
