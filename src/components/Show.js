@@ -26,10 +26,12 @@ export default class Show extends Component {
     render(){
         console.log(this.state.props);
             return(
-                <div>
+                <div className="doctor-show">
                     <h1>{this.state.doctor.name}</h1>
-                    <button type="submit">Send {this.state.doctor.name} A Message</button>
+                    <br/>
                     <img src={this.state.doctor.img_url}/>
+                    <br/>
+                    <button type="submit">Send {this.state.doctor.name} A Message</button>
                     <p>Specialty: {this.state.doctor.speciality}</p>
                     <p>Location: {this.state.doctor.location}</p>
                     <p>Years Experience: {this.state.doctor.years_experience}</p>
