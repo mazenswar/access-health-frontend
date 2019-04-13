@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AccessHealth
 
-## Available Scripts
+## Background of the Issue:
+According to the [World Health Organization](https://www.who.int/en/news-room/fact-sheets/detail/mental-health-strengthening-our-response
+):
 
-In the project directory, you can run:
+  *"Mental health is a state of well-being in which an individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and is able to make a contribution to his or her community.*
 
-### `npm start`
+  *Mental health is fundamental to our collective and individual ability as humans to think, emote, interact with each other, earn a living and enjoy life. On this basis, the promotion, protection and restoration of mental health can be regarded as a vital concern of individuals, communities and societies throughout the world."*
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The [National Institute of Mental Health](https://www.nimh.nih.gov/health/statistics/mental-illness.shtml#part_154787) states that nearly one in five U.S. adults live with a mental illness (46.6 million in 2017).
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+What are Mental Health Services?
 
-### `npm test`
+In the [2017 National Survey on Drug Use and Health (NSDUH)](https://www.samhsa.gov/data/sites/default/files/cbhsq-reports/NSDUHDetailedTabs2017/NSDUHDetailedTabs2017.htm#tab8-33A) mental health services is defined as having received inpatient treatment/counseling or outpatient treatment/counseling, or having used prescription medication for problems with emotions, nerves, or mental health.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Graph](src/images/mental-health-svcs-adults.png)
 
-### `npm run build`
+For the purposes of our app, we will be focusing on the services of Psychologists, Therapists, and Psychiatrists.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Design Statement:
+Our app provides access to mental health services for young professionals (age 18-40) in NYC to whom access to mental health care was previously unavailable.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Our app will also provide students in the field of mental health treatment the opportunity to fulfill hour requirements of a fellowship program.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## MVP:
+- An app that facilitates the connection between a User (patient) and a Doctor who specializes in mental health services.
+- The User logs in and is directed to a landing page which contains information about the app and a FAQ section. From a Nav bar, the User has the ability to access a list of doctors and the User's profile page. Within the Doctor's list page, the User can search for a doctor by name, filter by specialization/location/language/etc, and select a Doctor to view its page.
 
-### `npm run eject`
+## App Site Map:
+- Landing Page
+	- About
+	- FAQ
+- Navbar
+	- Home
+	- Doctor List
+	- Profile
+- Doctor List Page
+	- List of doctors
+	- Search for Doctor by name
+	- Filter by specialization/location
+	- Click on doctor ITEM
+- Doctor Show Page
+	- Details of doctor
+	- Message doctor
+	- Calendar (stretch)
+- Profile
+	- User details
+	- Text area to input mental health issue that needs help
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technologies Used:
+- ~~Blockstack~~
+- React
+- Ruby on Rails
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Implement App
+#### FRONTEND
+$ npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+$ npm start
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### BACKEND
+$ bundle install
 
-## Learn More
+$ rails db:migrate
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+$ rails db:seed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+$ rails s

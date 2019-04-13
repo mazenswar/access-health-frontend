@@ -12,16 +12,15 @@ import './App.css';
 class App extends Component {
 
   state = {
-    currentUser: '',
+    currentUser: {},
   }
 
   componentDidMount() {
-
     let token = localStorage.getItem('token')
     if(token) {
       fetch('http://localhost:4000/current_user', { headers: { Authorization: `Bearer ${token}` } })
       .then( r => r.json() )
-      .then( data => this.setState({ currentUser: data }))
+      .then( data => this.setState({ currentUser: data }, () => console.log(data)))
       this.props.history.push('/home')
     } else {
       this.props.history.push('/')
@@ -43,7 +42,7 @@ class App extends Component {
       localStorage.setItem('token', data.jwt)
       console.log(data)
       this.setState({
-        currentUser: data.user
+        currentUser: data
       })
     } )
 
@@ -61,24 +60,29 @@ class App extends Component {
       body: JSON.stringify(userData)
     }
     fetch('http://localhost:4000/auth', configObj)
-    .then( r => r.json() )
+    .then( r => r.json())
     .then( data => {
       if(data.jwt) {
-        this.setState({ currentUser: data.user})
+        this.setState({ currentUser: data }, () => console.log(data))
         localStorage.setItem('token', data.jwt)
         this.props.history.push('./home')
       }
     })
 
+  }
 
+  handleLogout = () => {
+    this.setState({ currentUser: {} })
+    localStorage.removeItem("token")
+    this.props.history.push('/')
   }
 
 
   render() {
     return (
       <div className="App">
-        <Navbar user={this.state.currentUser}/>
-        <RouterComp handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
+        <Navbar handleLogout={this.handleLogout} user={this.state.currentUser}/>
+        <RouterComp user={this.state.currentUser} handleLogin={this.handleLogin} handleSignup={this.handleSignup}/>
         <Footer />
       </div>
     );

@@ -25,22 +25,10 @@ export default class DoctorContainer extends Component {
         })
     }
 
-
-    showPage(renderProps){
-        console.log(renderProps);
-        // if(this.state.doctors.length > 0){
-        //     const doctorIdUrl = renderProps.match.params.id
-        //     const doctor = this.state.doctor.find(doctor){return doctor.id. === doctorIdUrl})
-        //     return <RapCard doctor={doctor} />
-        // } else {
-        //   return null
-        // }
-    }
-
-
     render(){
         return(
             <section className="doctor-container">
+                
                 {this.getDoctorCards()}
             </section>
         )
