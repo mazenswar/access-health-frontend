@@ -8,12 +8,13 @@ According to the [World Health Organization](https://www.who.int/en/news-room/fa
 
 Mental health is fundamental to our collective and individual ability as humans to think, emote, interact with each other, earn a living and enjoy life. On this basis, the promotion, protection and restoration of mental health can be regarded as a vital concern of individuals, communities and societies throughout the world."
 
-According to National early one in five U.S. adults live with a mental illness (46.6 million in 2017).
+According to [National Institute of Mental Health](https://www.nimh.nih.gov/health/statistics/mental-illness.shtml#part_154787) early one in five U.S. adults live with a mental illness (46.6 million in 2017).
 
 ![Graph](src/images/mental-health-svcs-adults.png)
 
 ## Design Statement:
-An app to provide access to mental health services for young professionals (age 18-40) to whom access to mental health care was previously unavailable (due to financial reasons or lack of coverage).
+Our app provides access to mental health services for young professionals (age 18-40) in NYC to whom access to mental health care was previously unavailable.
+Our app will also provide medical students the opportunity to fulfill hour requirements of a fellowship program.
 
 ## MVP:
 - An app that facilitates the connection between a User (patient) and a Doctor who specializes in mental health services.
@@ -44,3 +45,7 @@ An app to provide access to mental health services for young professionals (age 
 - ~~Blockstack~~
 - React
 - Ruby on Rails
+
+## Implement App
+$ npm install
+$ npm start
