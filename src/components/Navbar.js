@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
-  console.log(props.user['user'])
   return (
     <nav>
       <div className="navLink"><Link to="">Home</Link></div>
