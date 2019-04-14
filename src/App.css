@@ -114,6 +114,43 @@ section:last-child {
   min-height: 50vh;
 }
 
+.about p {
+  padding: 10px 0;
+  width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.about p:first-child {
+  font-weight: 700;
+  text-align: center;
+}
+
+.about p:last-child {
+  padding-bottom: 70px;
+}
+
+.about h2 {
+  padding: 20px 0 10px;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.about h3 {
+  padding: 10px 0;
+}
+
+.about .graph {
+  width: 700px;
+  padding: 30px 0;
+}
+
+.about .banner {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 900px;
+}
+
 /* FAQ */
 .faq-section {
   background-color: #f0f0f0;
@@ -153,11 +190,32 @@ section {
 
 /* FOOTER */
 
+.footer-logo {
+  width: 200px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
 footer {
   border-top: 3px solid #ccc;
   background-color: #999;
   color: #fff;
   height: 150px;
+}
+
+footer a:link, footer a:active, footer a:visited {
+  color: #000;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 10px;
 }
 
 /* DOCTOR CARD */
