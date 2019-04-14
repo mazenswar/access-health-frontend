@@ -24,7 +24,7 @@ export default class DoctorContainer extends Component {
 
 
     getDoctorCards = () => {
-        if (this.state.searchedDoctors.length > 0) {
+        if (this.statesearchedDoctors.length > 0) {
             return this.state.searchedDoctors.map(doctor => {
               return <DoctorCard key={doctor.id} doctor={doctor}/>
             })

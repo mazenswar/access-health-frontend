@@ -1,4 +1,6 @@
 # AccessHealth
+#### Created By:
+Amos Shin, Angelo Spampinato, Dallas Bille, Mazan Al Swar, Nate Hunter
 
 ## Background of the Issue:
 According to the [World Health Organization](https://www.who.int/en/news-room/fact-sheets/detail/mental-health-strengthening-our-response
@@ -19,13 +21,13 @@ In the [2017 National Survey on Drug Use and Health (NSDUH)](https://www.samhsa.
 For the purposes of our app, we will be focusing on the services of Psychologists, Therapists, and Psychiatrists.
 
 ## Design Statement:
-Our app provides access to mental health services for young professionals (age 18-40) in NYC to whom access to mental health care was previously unavailable.
+Our app facilitates access to mental health services for young professionals (age 18-40) in NYC to whom access to mental health care was previously unavailable by connecting the user with students in the field of mental health treatment.
 
-Our app will also provide students in the field of mental health treatment the opportunity to fulfill hour requirements of a fellowship program.
+Our app will also provide the students in the field of mental health treatment the opportunity to fulfill hour requirements of a fellowship program.
 
 ## MVP:
 - An app that facilitates the connection between a User (patient) and a Doctor who specializes in mental health services.
-- The User logs in and is directed to a landing page which contains information about the app and a FAQ section. From a Nav bar, the User has the ability to access a list of doctors and the User's profile page. Within the Doctor's list page, the User can search for a doctor by name, filter by specialization/location/language/etc, and select a Doctor to view its page.
+- The User logs in and is directed to a landing page which contains information about the app and a FAQ section. From a Nav bar, the User has the ability to access a list of doctors and the User's profile page. Within the Doctor's list page, the User can search for a doctor by name, filter by specialization/location/language/etc, and select a Doctor to view their page.
 
 ## App Site Map:
 - Landing Page
@@ -66,4 +68,4 @@ $ rails db:migrate
 
 $ rails db:seed
 
-$ rails s
+$ rails s -p 4000

@@ -6,7 +6,7 @@ const DoctorCard = props => {
         <Link to={`/${props.doctor.id}`} >
         <div className="doctor-card">
             <img src={props.doctor.img_url}/>
-            <p>Name: {props.doctor.name}</p>
+            <h3>Name: {props.doctor.name}</h3>
             <p>Specialty: {props.doctor.speciality}</p>
             <p>Years Experience: {props.doctor.years_experience}</p>
             <p>Education: {props.doctor.education}</p>

@@ -48,8 +48,14 @@ ul li {
 nav {
   background-color: #fff;
   height: 50px;
-  display: flex;
   border-bottom: 1px solid #ccc;
+
+}
+
+.nav-container {
+  /* width: 960px;
+  margin: auto; */
+  display: flex;
 }
 
 nav a:link, nav a:active, nav a:visited {
@@ -83,6 +89,11 @@ nav a:hover {
   margin-top: 10px;
 }
 
+.logo-image {
+  padding: 8px 0 0 30px;
+  width: 150px;
+}
+
 body {
   height: 100vh;
   font-family: 'Nanum Gothic', sans-serif;
@@ -101,6 +112,43 @@ section:last-child {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   min-height: 50vh;
+}
+
+.about p {
+  padding: 10px 0;
+  width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.about p:first-child {
+  font-weight: 700;
+  text-align: center;
+}
+
+.about p:last-child {
+  padding-bottom: 70px;
+}
+
+.about h2 {
+  padding: 20px 0 10px;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.about h3 {
+  padding: 10px 0;
+}
+
+.about .graph {
+  width: 700px;
+  padding: 30px 0;
+}
+
+.about .banner {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 900px;
 }
 
 /* FAQ */
@@ -129,6 +177,7 @@ section:last-child {
   width: 700px;
   margin: auto;
   padding: 0 0 30px 0;
+  text-align: left;
 }
 
 /* SECTION */
@@ -141,11 +190,32 @@ section {
 
 /* FOOTER */
 
+.footer-logo {
+  width: 200px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
 footer {
   border-top: 3px solid #ccc;
   background-color: #999;
   color: #fff;
   height: 150px;
+}
+
+footer a:link, footer a:active, footer a:visited {
+  color: #000;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 10px;
 }
 
 /* DOCTOR CARD */
@@ -185,6 +255,14 @@ footer {
 
 .doctor-card h3 {
   padding-top: 20px;
+}
+
+.doctor-show h1 {
+  padding-top: 30px;
+}
+
+.doctor-show p {
+  padding: 10px 0;
 }
 
 /* SIGNUP AND LOGIN */
